@@ -1,0 +1,200 @@
+{
+  "saldo": 10500.0,
+  "historial": [
+    {
+      "tipo": "Dep\u00f3sito",
+      "monto": 123312.0,
+      "fecha": "2024-06-05 18:29:45"
+    },
+    {
+      "tipo": "Dep\u00f3sito",
+      "monto": 123312.0,
+      "fecha": "2024-06-05 18:29:50"
+    },
+    {
+      "tipo": "Dep\u00f3sito",
+      "monto": 123312.0,
+      "fecha": "2024-06-05 18:29:51"
+    },
+    {
+      "tipo": "Dep\u00f3sito",
+      "monto": 123312.0,
+      "fecha": "2024-06-05 18:29:52"
+    },
+    {
+      "tipo": "Dep\u00f3sito",
+      "monto": 123312.0,
+      "fecha": "2024-06-05 18:29:53"
+    },
+    {
+      "tipo": "Dep\u00f3sito",
+      "monto": 100.0,
+      "fecha": "2024-06-05 19:14:07"
+    },
+    {
+      "tipo": "Dep\u00f3sito",
+      "monto": 15000.0,
+      "fecha": "2024-06-05 19:14:30"
+    },
+    {
+      "tipo": "Retiro",
+      "monto": 6000.0,
+      "fecha": "2024-06-05 19:14:44"
+    },
+    {
+      "tipo": "Dep\u00f3sito",
+      "monto": 654.0,
+      "fecha": "2024-06-05 19:16:00"
+    },
+    {
+      "tipo": "Retiro",
+      "monto": 648.0,
+      "fecha": "2024-06-05 19:16:04"
+    },
+    {
+      "tipo": "Dep\u00f3sito",
+      "monto": 1551.0,
+      "fecha": "2024-06-06 14:59:28"
+    },
+    {
+      "tipo": "Dep\u00f3sito",
+      "monto": 23423.0,
+      "fecha": "2024-06-06 15:25:28"
+    },
+    {
+      "tipo": "Retiro",
+      "monto": 23423.0,
+      "fecha": "2024-06-06 15:25:30"
+    },
+    {
+      "tipo": "Dep\u00f3sito",
+      "monto": 321321.0,
+      "fecha": "2024-06-07 15:12:50"
+    },
+    {
+      "tipo": "Dep\u00f3sito",
+      "monto": 123123123.0,
+      "fecha": "2024-06-07 15:14:00"
+    },
+    {
+      "tipo": "Dep\u00f3sito",
+      "monto": 123123123.0,
+      "fecha": "2024-06-07 15:14:14"
+    },
+    {
+      "tipo": "Dep\u00f3sito",
+      "monto": 123123123.0,
+      "fecha": "2024-06-07 15:14:16"
+    },
+    {
+      "tipo": "Dep\u00f3sito",
+      "monto": 123123123.0,
+      "fecha": "2024-06-07 15:14:17"
+    },
+    {
+      "tipo": "Retiro",
+      "monto": 123123123.0,
+      "fecha": "2024-06-07 15:14:21"
+    },
+    {
+      "tipo": "Retiro",
+      "monto": 123123123.0,
+      "fecha": "2024-06-07 15:14:22"
+    },
+    {
+      "tipo": "Retiro",
+      "monto": 123123123.0,
+      "fecha": "2024-06-07 15:14:24"
+    },
+    {
+      "tipo": "Retiro",
+      "monto": 123123123.0,
+      "fecha": "2024-06-07 15:14:26"
+    },
+    {
+      "tipo": "Retiro",
+      "monto": 45454.0,
+      "fecha": "2024-06-07 15:23:14"
+    },
+    {
+      "tipo": "Dep\u00f3sito",
+      "monto": 45454.0,
+      "fecha": "2024-06-07 15:23:32"
+    },
+    {
+      "tipo": "Dep\u00f3sito",
+      "monto": 45454.0,
+      "fecha": "2024-06-07 15:23:41"
+    },
+    {
+      "tipo": "Dep\u00f3sito",
+      "monto": 1000000000.0,
+      "fecha": "2024-06-07 16:26:53"
+    },
+    {
+      "tipo": "Retiro",
+      "monto": 1000.0,
+      "fecha": "2024-06-13 13:12:23"
+    },
+    {
+      "tipo": "Retiro",
+      "monto": 150.0,
+      "fecha": "2024-06-13 13:17:53"
+    },
+    {
+      "tipo": "Dep\u00f3sito",
+      "monto": 10.0,
+      "fecha": "2024-06-13 13:18:02"
+    },
+    {
+      "tipo": "Retiro",
+      "monto": 100000.0,
+      "fecha": "2024-06-13 22:16:13"
+    },
+    {
+      "tipo": "Transferencia",
+      "monto": 1500.0,
+      "fecha": "2024-06-13 22:16:26"
+    },
+    {
+      "tipo": "Transferencia",
+      "monto": 17000.0,
+      "fecha": "2024-06-13 22:16:38"
+    },
+    {
+      "tipo": "Transferencia",
+      "monto": 7400.0,
+      "fecha": "2024-06-13 22:16:46"
+    },
+    {
+      "tipo": "Transferencia",
+      "monto": 1500.0,
+      "fecha": "2024-06-14 14:39:27"
+    },
+    {
+      "tipo": "Retiro",
+      "monto": 1000276292.0,
+      "fecha": "2024-06-14 14:40:55"
+    },
+    {
+      "tipo": "Dep\u00f3sito",
+      "monto": 1000.0,
+      "fecha": "2024-06-14 15:45:32"
+    },
+    {
+      "tipo": "Retiro",
+      "monto": 500.0,
+      "fecha": "2024-06-14 15:45:37"
+    },
+    {
+      "tipo": "Transferencia",
+      "monto": 100.0,
+      "fecha": "2024-06-14 15:46:09"
+    },
+    {
+      "tipo": "Dep\u00f3sito",
+      "monto": 10000.0,
+      "fecha": "2024-06-14 18:34:40"
+    }
+  ]
+}
