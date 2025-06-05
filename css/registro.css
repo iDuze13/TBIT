@@ -1,0 +1,48 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* <- evita el scroll */
+}
+.login-background {
+  background-image: url("../img/fondo-registro.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Asegura que ocupe el 100% de la pantalla */
+}
+
+.main-container {
+  height: 100vh; /* También asegurate que esto ocupe todo */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container > .hero.is-danger {
+  width: 100%;
+  max-width: 500px;
+  min-width: 300px;
+  padding: 2rem;
+}
+
+.input::placeholder {
+    color: #4a4a4a !important;
+    opacity: 1;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  z-index: 1000;
+}
+
+footer a {
+    color: #130d0d !important;
+    text-decoration: none;
+}
+
