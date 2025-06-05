@@ -1,8 +1,9 @@
 html, body {
-  height: 100%;
+  height: auto;
+  overflow-y: auto;
   margin: 0;
   padding: 0;
-  overflow: hidden; /* <- evita el scroll */
+  overflow: visible; /* <- evita el scroll */
 }
 
 .form-inline{
@@ -53,7 +54,6 @@ footer a {
     color: #130d0d !important;
     text-decoration: none;
 }
-
 /* estilos.css */
 .provincia {
   fill: #cccccc;
