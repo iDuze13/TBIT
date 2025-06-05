@@ -26,7 +26,7 @@
 <div id="navMenu" class="navbar-menu">
   <div class="navbar-start is-flex is-justify-content-center is-align-items-center" style="flex: 1;">
     <a class="navbar-item" href="index.php?vista=menu">Menú</a>
-    <a class="navbar-item" href="index.php?vista=destinos">Destinos Turísticos</a>
+    <a class="navbar-item" href="index.php?vista=destinos_turisticos">Destinos Turísticos</a>
     <a class="navbar-item" href="index.php?vista=comentarios">Comentarios</a>
     <a class="navbar-item" href="index.php?vista=favoritos">Favoritos</a>
   </div>
