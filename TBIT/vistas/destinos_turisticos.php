@@ -1,3 +1,6 @@
+<?php
+include "./rep/header.php";
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
