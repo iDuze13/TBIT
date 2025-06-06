@@ -1,52 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Mis Favoritos</title>
+    <meta charset="UTF-8">
+    <title>Favorito</title>
     <style>
-        body { font-family: Arial; background: #f9f9f9; margin: 0; padding: 20px; }
-        .card-container { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+        body {
+            background-color: #f2f2f2;
+            padding: 2px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .Favoritos-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
         .card {
-            background: white;
+            background-color: white;
             border-radius: 10px;
-            padding: 15px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            position: relative;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            width: 300px;
+            padding: 20px;
+            box-sizing: border-box;
+            transition: transform 0.2s ease-in-out;
         }
-        .card img {
-            width: 100%;
-            height: 160px;
-            object-fit: cover;
-            border-radius: 8px;
+
+        .card:hover {
+            transform: scale(1.03);
         }
-        .card h3 { margin: 10px 0 5px; }
-        .card p { margin: 5px 0; font-size: 14px; color: #333; }
-        .actions { margin-top: 10px; display: flex; justify-content: space-between; }
-        .btn { padding: 5px 10px; border: none; border-radius: 5px; cursor: pointer; }
-        .btn-danger { background-color: #e74c3c; color: white; }
-        .btn-primary { background-color: #3498db; color: white; }
+
+        .card h2 {
+            margin: 0;
+            font-size: 20px;
+            color: #0077cc;
+        }
+
+        .card .fecha {
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 10px;
+        }
+
+        .card .destino {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        .card .comentario {
+            font-size: 14px;
+            color: #333;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
 
-<h1>Tus Destinos Favoritos</h1>
+<h1>Favoritos</h1>
 
-<div class="card-container">
-    <?php while ($row = mysqli_fetch_assoc($resultado)): ?>
-        <div class="card">
-            <img src="../imagenes/destinos/<?= $row['Id_destino'] ?>.jpg" alt="Imagen de <?= $row['DESTINO_TURISTICO_nombre'] ?>">
-            <h3><?= $row['DESTINO_TURISTICO_nombre'] ?></h3>
-            <p><strong>Tipo:</strong> <?= $row['DESTINO_TURISTICO_tipo_destino'] ?></p>
-            <p><?= substr($row['DESTINO_TURISTICO_descripcion'], 0, 100) . "..." ?></p>
-            <div class="actions">
-                <form method="post" action="eliminar_favorito.php" style="margin:0;">
-                    <input type="hidden" name="idFAVORITO" value="<?= $row['idFAVORITO'] ?>">
-                    <button type="submit" class="btn btn-danger">Eliminar</button>
-                </form>
-                <a href="detalle_destino.php?id=<?= $row['Id_destino'] ?>" class="btn btn-primary">Ver Detalles</a>
-            </div>
-        </div>
-    <?php endwhile; ?>
+<div class="Favoritos-container">
+   <?php include("./php/controlador_Favoritos.php"); ?>
+   <?php if ($resultado && mysqli_num_rows($resultado) > 0): ?>
+       <?php while ($fila = mysqli_fetch_assoc($resultado)) : ?>
+           <div class="card">
+               
+            <div class="destino"><?php echo htmlspecialchars($fila['DESTINO_TURISTICO_nombre_destino']); ?></div>
+            <div class="comentario"><?php echo htmlspecialchars($fila['USUARIO_idUSUARIO']); ?></div>
+           </div>
+       <?php endwhile; ?>
+   <?php else: ?>
+       <p>No tenés destinos favoritos todavía.</p>
+   <?php endif; ?>
 </div>
+<?php
+if (isset($conexion)) {
+    mysqli_close($conexion);
+}
+?>
 
 </body>
 </html>

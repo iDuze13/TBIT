@@ -50,5 +50,5 @@
 
 <?php
 $stmt->close();
-$conn->close();
+$conexion->close();
 ?>

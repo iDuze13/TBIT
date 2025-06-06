@@ -1,6 +1,8 @@
 <?php
 session_start();
+session_unset();
 require_once("conexion.php");
+
 
 $usuario = $_POST['usuario'] ?? '';
 $contrasena = $_POST['contrasena'] ?? '';
@@ -13,11 +15,22 @@ if (!$conexion) {
     exit();
 }
 
-$consulta = "SELECT * FROM usuario WHERE USUARIO_nombre ='$usuario' AND USUARIO_contrasenia='$contrasena'";
-$resultado = mysqli_query($conexion, $consulta);
+// Usa sentencia preparada para mayor seguridad (evita SQL Injection)
+$consulta = "SELECT idUSUARIO, USUARIO_nombre FROM usuario WHERE USUARIO_nombre = ? AND USUARIO_contrasenia = ?";
+$stmt = $conexion->prepare($consulta);
+$stmt->bind_param("ss", $usuario, $contrasena);
+$stmt->execute();
+$resultado = $stmt->get_result();
 
-if (mysqli_num_rows($resultado) == 1) {
-    $_SESSION['usuario'] = $usuario;
+if ($resultado->num_rows === 1) {
+    $fila = $resultado->fetch_assoc();
+
+    // Guarda el ID del usuario en la sesión
+    $_SESSION['usuario'] = $fila['idUSUARIO']; // ✅ esto es lo correcto
+
+    // Opcional: si también querés guardar el nombre
+    // $_SESSION['usuario_nombre'] = $fila['USUARIO_nombre'];
+
     header("Location: ../index.php?vista=menu");
     exit();
 } else {
