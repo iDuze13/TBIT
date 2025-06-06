@@ -1,15 +1,24 @@
 <?php
-require_once("../conexion.php");
+
+require_once 'conexion.php';
 session_start();
 
 $conexion = conect();
-$id = $_POST['idFAVORITO'] ?? null;
 
-if ($id) {
-    $stmt = $conexion->prepare("DELETE FROM favorito WHERE idFAVORITO = ?");
-    $stmt->bind_param("i", $id);
+if (!$conexion) {
+    die("Conexión fallida: " . mysqli_connect_error());
+}
+
+$idFavorito = $_POST['idFAVORITO'] ?? null;
+$usuario_id = $_SESSION['usuario_id'] ?? null;
+
+if ($idFavorito && $usuario_id) {
+    $sql = "DELETE FROM favorito WHERE idFAVORITO = ? AND USUARIO_idUSUARIO = ?";
+    $stmt = $conexion->prepare($sql);
+    $stmt->bind_param("ii", $idFavorito, $usuario_id);
     $stmt->execute();
 }
 
-header("Location: Favoritos.php");
+header("Location: ../index.php?vista=Favoritos");
 exit();
+?>

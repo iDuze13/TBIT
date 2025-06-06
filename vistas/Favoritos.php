@@ -63,14 +63,19 @@
 
 <h1>Favoritos</h1>
 
+
 <div class="Favoritos-container">
    <?php include("./php/controlador_Favoritos.php"); ?>
    <?php if ($resultado && mysqli_num_rows($resultado) > 0): ?>
        <?php while ($fila = mysqli_fetch_assoc($resultado)) : ?>
            <div class="card">
-               
-            <div class="destino"><?php echo htmlspecialchars($fila['DESTINO_TURISTICO_nombre_destino']); ?></div>
-            <div class="comentario"><?php echo htmlspecialchars($fila['USUARIO_idUSUARIO']); ?></div>
+               <h2><?php echo htmlspecialchars($fila['DESTINO_TURISTICO_nombre']); ?></h2>
+               <div class="destino"><?php echo htmlspecialchars($fila['DESTINO_TURISTICO_tipo_destino']); ?></div>
+               <div class="comentario"><?php echo htmlspecialchars($fila['DESTINO_TURISTICO_descripcion']); ?></div>
+               <form method="post" action="./php/Eliminar_Favoritos.php" style="margin-top:10px;">
+                   <input type="hidden" name="idFAVORITO" value="<?php echo $fila['idFAVORITO']; ?>">
+                   <button type="submit" class="btn btn-danger">Eliminar</button>
+               </form>
            </div>
        <?php endwhile; ?>
    <?php else: ?>
