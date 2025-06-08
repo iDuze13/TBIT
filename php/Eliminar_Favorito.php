@@ -10,7 +10,7 @@ if (!$conexion) {
 }
 
 $idFavorito = $_POST['idFAVORITO'] ?? null;
-$usuario_id = $_SESSION['usuario_id'] ?? null;
+$usuario_id = $_SESSION['usuario'] ?? null;
 
 if ($idFavorito && $usuario_id) {
     $sql = "DELETE FROM favorito WHERE idFAVORITO = ? AND USUARIO_idUSUARIO = ?";

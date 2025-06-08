@@ -9,7 +9,7 @@ if (!$conexion) {
 }
 
 
-$usuario_id = $_SESSION['usuario_id'] ?? null;
+$usuario_id = $_SESSION['usuario'] ?? null;
 
 if (!$usuario_id) {
     $resultado = null;
