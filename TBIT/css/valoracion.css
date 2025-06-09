@@ -1,0 +1,46 @@
+.radio {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: row-reverse;
+}
+
+.radio > input {
+  position: absolute;
+  appearance: none;
+}
+
+.radio > label {
+  cursor: pointer;
+  font-size: 30px;
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.radio > label:hover {
+  transform: scale(1.2);
+  animation: pulse 0.6s infinite alternate;
+}
+
+.radio > label:hover,
+.radio > label:hover ~ label {
+  color: #ff9e0b;
+  text-shadow: 0 0 10px rgba(255, 158, 11, 0.7);
+}
+
+.radio > input:checked + label,
+.radio > input:checked + label ~ label {
+  color: #ff9e0b;
+  text-shadow: 0 0 15px rgba(255, 158, 11, 0.9);
+  animation: pulse 0.8s infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
