@@ -1,0 +1,137 @@
+/* Favoritos.css - Estilos para la página de favoritos */
+
+body {
+  background: #f5f6fa;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Encabezado */
+.favoritos-header {
+  margin: 40px auto 20px auto;
+  max-width: 800px;
+  text-align: center;
+}
+.favoritos-header h2 {
+  font-size: 2.2rem;
+  color: #242524;
+  margin-bottom: 10px;
+}
+.favoritos-header p {
+  color: #8C8D8B;
+  font-size: 1.1rem;
+}
+
+/* Contenedor de tarjetas */
+.favoritos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+/* Tarjeta de favorito */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #0001;
+  width: 320px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s;
+}
+.card:hover {
+  transform: translateY(-5px) scale(1.02);
+}
+.card-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background: #eaeaea;
+}
+.card-content {
+  padding: 18px 16px 16px 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.card-content h2 {
+  font-size: 1.3rem;
+  margin: 0 0 6px 0;
+}
+.destino {
+  color: #636AE8;
+  font-weight: 600;
+}
+.comentario {
+  color: #8C8D8B;
+  font-size: 0.98rem;
+}
+.popularidad {
+  color: #F59E0B;
+  font-size: 0.95rem;
+}
+.card-buttons {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+}
+.card-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background: #eaeaea url('../img/Parque_Nacional_Iguazu.png') center center no-repeat;
+  background-size: cover;
+}
+/* Botones */
+.btn {
+  padding: 7px 18px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  transition: background 0.2s;
+}
+.btn-danger {
+  background: #DE3B40;
+  color: #fff;
+}
+.btn-danger:hover {
+  background: #C12126;
+}
+.btn-primary {
+  background: #636AE8;
+  color: #fff;
+}
+.btn-primary:hover {
+  background: #4850E4;
+}
+
+/* Mensaje sin favoritos */
+.no-favoritos {
+  width: 100%;
+  text-align: center;
+  color: #8C8D8B;
+  font-size: 1.2rem;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .favoritos-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+  .card {
+    width: 95vw;
+    min-width: 0;
+  }
+}
