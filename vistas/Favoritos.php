@@ -18,7 +18,18 @@
    <?php if ($resultado && mysqli_num_rows($resultado) > 0): ?>
        <?php while ($fila = mysqli_fetch_assoc($resultado)) : ?>
            <div class="card">
-               <img class="card-img" src="<?php echo htmlspecialchars($fila['imagen'] ?? './img/default.jpg'); ?>" alt="Imagen destino">
+            <img class="card-img"
+                src="../img/<?php
+                    if ($fila['DESTINO_TURISTICO_nombre'] === 'Parque Nacional Iguazú') {
+                        echo 'Parque_Nacional_Iguazu.png';
+                    } elseif ($fila['DESTINO_TURISTICO_nombre'] === 'Aconcagua') {
+                        echo 'Aconcagua.png';
+                    } else {
+                        echo 'default.png';
+                    }
+                ?>"
+                alt="Imagen destino">
+
                <div class="card-content">
                    <h2><?php echo htmlspecialchars($fila['DESTINO_TURISTICO_nombre']); ?></h2>
                    <div class="destino"><?php echo htmlspecialchars($fila['DESTINO_TURISTICO_tipo_destino']); ?></div>
