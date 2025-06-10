@@ -7,7 +7,14 @@
     <title>Favoritos</title>
     <link rel="stylesheet" href="../css/Favoritos.css">
 </head>
+
 <body>
+    <section> <?php 
+
+include("./rep/header.php");
+
+
+?></section>
 <div class="favoritos-header">
     <h2>Tus Destinos Favoritos</h2>
     <p>Administrá y volvé a visitar los lugares que has amado o soñás con explorar.</p>
@@ -45,8 +52,6 @@
                </div>
            </div>
 
-
-           
        <?php endwhile; ?>
    <?php else: ?>
        <div class="no-favoritos">
@@ -55,6 +60,11 @@
    <?php endif; ?>
 </div>
 
+    <section> <?php  
+    include("./rep/footer.php");
+    ?>
+    </section>
+           
 <?php
 if (isset($conexion)) {
     mysqli_close($conexion);

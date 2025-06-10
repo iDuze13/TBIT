@@ -1,0 +1,310 @@
+.image {
+  position: absolute; 
+  top: 0px; 
+  left: 14px; 
+  width: 91px; 
+  height: 87px; 
+  border-radius: 0px; 
+}
+
+.container {
+  position: absolute; 
+  top: 16px; 
+  left: 0px; 
+  width: 1440px; 
+  height: 80px; 
+  background: #171A1FFF; /* neutral-900 */
+  border-radius: 0px; 
+  box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1F; /* shadow-xs */
+}
+
+/* Header Menu 1 */
+.header-menu {
+  position: absolute; 
+  top: 12px; 
+  left: 486px; 
+  width: 484px; 
+  height: 56px; 
+  display: flex; 
+  align-items: center; 
+  font-family: Inter; /* Body */
+  font-size: 16px; 
+  line-height: 26px; 
+  font-weight: 400; 
+  opacity: 1; 
+}
+
+/* Header Menu 1 - Item */
+.header-menu .header-menu-item {
+  padding: 15px 32px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  color: #565E6CFF; /* neutral-600 */
+  background: #000000FF; /* transparent */
+  border-radius: 0px; 
+  cursor: pointer; 
+  white-space: nowrap; 
+}
+
+/* Header Menu 1 - Selected item */
+.header-menu .header-menu-item.selected {
+  position: relative; 
+  font-weight: 700; 
+  color: #636AE8FF; /* primary-500 */
+  background: #000000FF; /* transparent */
+}
+
+/* Header Menu 1 - Selected item */
+.header-menu .header-menu-item.selected:hover:active {
+  color: #636AE8FF; /* primary-500 */
+  background: #000000FF; /* transparent */
+}
+
+/* Header menu item 1 */
+.header-menu .header-menu-item:nth-child(1) {
+  font-family: Inter; 
+  font-size: 16px; 
+  line-height: 26px; 
+  font-weight: 700; 
+  color: #FFFFFFFF; /* white */
+}
+
+/* Header menu item 2 */
+.header-menu .header-menu-item:nth-child(2) {
+  font-family: Inter; 
+  font-size: 16px; 
+  line-height: 26px; 
+  font-weight: 400; 
+  color: #636AE8FF; /* primary-500 */
+}
+
+/* Header menu item 3 */
+.header-menu .header-menu-item:nth-child(3) {
+  font-family: Inter; 
+  font-size: 16px; 
+  line-height: 26px; 
+  font-weight: 400; 
+  color: #FFFFFFFF; /* white */
+}
+
+/* Header menu item 4 */
+.header-menu .header-menu-item:nth-child(4) {
+  font-family: Inter; 
+  font-size: 16px; 
+  line-height: 26px; 
+  font-weight: 400; 
+  color: #FFFFFFFF; /* white */
+}
+
+.text {
+  position: absolute; 
+  top: 77px; 
+  left: 166px; 
+  font-family: Archivo; /* Heading */
+  font-size: 60px; 
+  line-height: 60px; 
+  font-weight: 800; 
+  color: #242524FF; 
+}
+
+/* Icon Button 3 */
+.button {
+  position: absolute; 
+  top: 18px; 
+  left: 1260px; 
+  width: 44px; 
+  height: 44px; 
+  padding: 0 0px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  color: #FFFFFFFF; /* white */
+  background: #636AE800; /* primary-500 */
+  opacity: 1; 
+  border: none; 
+  border-radius: 22px; 
+  gap: 0px; 
+}
+.button .icon {
+  width: 26px; 
+  height: 26px; 
+  fill: #FFFFFFFF; /* white */
+}
+/* Hover */
+.button:hover {
+  color: #FFFFFFFF; /* white */
+  background: #636AE800; /* primary-500 */
+}
+/* Pressed */
+.button:hover:active {
+  color: #FFFFFFFF; /* white */
+  background: #636AE800; /* primary-500 */
+}
+/* Disabled */
+.button:disabled {
+  opacity: 0.4; 
+}
+
+/* Disabled hover */
+.button:disabled:hover {
+  color: #FFFFFFFF; /* white */
+  background: #636AE800; /* primary-500 */
+}
+
+/* Disabled pressed */
+.button:disabled:hover:active {
+  color: #FFFFFFFF; /* white */
+  background: #636AE800; /* primary-500 */
+}
+
+/* Icon Button 1 */
+.button {
+  position: absolute; 
+  top: 18px; 
+  left: 1364px; 
+  width: 44px; 
+  height: 44px; 
+  padding: 0 0px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  color: #FFFFFFFF; /* white */
+  background: #636AE800; /* primary-500 */
+  opacity: 1; 
+  border: none; 
+  border-radius: 22px; 
+  gap: 0px; 
+}
+.button .icon {
+  width: 26px; 
+  height: 26px; 
+  fill: #FFFFFFFF; /* white */
+}
+/* Hover */
+.button:hover {
+  color: #FFFFFFFF; /* white */
+  background: #636AE800; /* primary-500 */
+}
+/* Pressed */
+.button:hover:active {
+  color: #FFFFFFFF; /* white */
+  background: #636AE800; /* primary-500 */
+}
+/* Disabled */
+.button:disabled {
+  opacity: 0.4; 
+}
+
+/* Container */
+.container {
+  position: absolute; 
+  top: 1782px; 
+  left: 0px; 
+  width: 1440px; 
+  height: 424px; 
+  background: #FFFFFFFF; /* white */
+  border-radius: 0px 0px 0px 0px; 
+}
+
+/* Container */
+.container {
+  position: absolute; 
+  top: 56px; 
+  left: 0px; 
+  width: 1440px; 
+  height: 1726px; 
+  background: linear-gradient(90deg, #E8618C1A 0%, #636AE81A 100%); 
+  border-radius: 0px 0px 0px 0px; 
+}
+
+.text {
+  position: absolute; 
+  top: 67px; 
+  left: 702px; 
+  font-family: Inter; /* Body */
+  font-size: 16px; 
+  line-height: 24px; 
+  font-weight: 700; 
+  color: #242524FF; 
+}
+
+.text {
+  position: absolute; 
+  top: 126px; 
+  left: 616px; 
+  font-family: Archivo; /* Heading */
+  font-size: 18px; 
+  line-height: 28px; 
+  font-weight: 600; 
+  color: #242524FF; 
+}
+
+/* Image */
+.image {
+  position: absolute; 
+  top: 116px; 
+  left: 838px; 
+  width: 52px; 
+  height: 47px; 
+  border-radius: 0px; 
+}
+
+/* Button */
+.button {
+  position: absolute; 
+  top: 324px; 
+  left: 112px; 
+  width: 77px; 
+  height: 36px; 
+  padding: 0 12px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  font-family: Inter; 
+  font-size: 14px; 
+  line-height: 22px; 
+  font-weight: 500; 
+  color: #8C8D8BFF; 
+  background: #F7F7F7FF; 
+  opacity: 1; 
+  border-radius: 6px; 
+  border-width: 1px; 
+  border-color: #EBEBEAFF; 
+  border-style: solid; 
+}
+/* Hover */
+.button:hover {
+  color: #8C8D8BFF; 
+  background: #F7F7F7FF; 
+}
+/* Pressed */
+.button:hover:active {
+  color: #8C8D8BFF; 
+  background: #F7F7F7FF; 
+}
+/* Disabled */
+.button:disabled {
+  opacity: 0.4; 
+}
+
+.text {
+  position: absolute; 
+  top: 342px; 
+  left: 675px; 
+  font-family: Inter; /* Body */
+  font-size: 14px; 
+  line-height: 20px; 
+  font-weight: 400; 
+  color: #8C8D8BFF; 
+}
+
+/* instagram */
+.icon {
+  position: absolute; 
+  top: 332px; 
+  left: 1308px; 
+  width: 20px; 
+  height: 20px; 
+  fill: #8C8D8BFF; 
+}
