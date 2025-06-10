@@ -21,7 +21,7 @@
 </section>
 <footer class="footer has-background-dark has-text-white">
   <div class="container has-text-centered">
-    <p>© 2023 Mi Compañía. Todos los derechos reservados.</p>
+    <p>© 2025 Mi Compañía. Todos los derechos reservados.</p>
     <p>
       <a href="#" class="has-text-white">Política de privacidad</a> |
       <a href="#" class="has-text-white">Términos de servicio</a>
