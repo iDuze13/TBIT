@@ -1,7 +1,7 @@
 <?php
 $host = "localhost";
 $usuario = "root";
-$contrasena = ""; // o tu contraseña
+$contrasena = ""; 
 $basededatos = "destinosturisticos";
 
 $conexion = new mysqli($host, $usuario, $contrasena, $basededatos);
@@ -10,11 +10,11 @@ if ($conexion->connect_error) {
     die("Conexión fallida: " . $conexion->connect_error);
 }
 
-// Obtener mes y año seleccionados
+
 $mes = isset($_GET['mes']) ? $_GET['mes'] : date('m');
 $anio = isset($_GET['anio']) ? $_GET['anio'] : date('Y');
 
-// Consulta de ranking por promedio de puntaje
+
 $sql = "
 SELECT 
     dt.DESTINO_TURISTICO_nombre AS destino,
